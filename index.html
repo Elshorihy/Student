@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0f172a" />
     <meta name="description" content="OmniTrack - High School Daily Tracker" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/logo-mark.svg" />
     <meta property="og:type" content="website" />
@@ -15,10 +16,16 @@
     <meta name="twitter:title" content="OmniTrack Student" />
     <meta name="twitter:description" content="High School Daily Tracker & Student Productivity Dashboard" />
     <meta name="twitter:image" content="/og-image.svg" />
-    <title>OmniTrack Student</title>
+    <title>Hamza Shaheen</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="/install.js" defer></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+      }
+    </script>
   </body>
 </html>
