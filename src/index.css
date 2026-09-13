@@ -1,3 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cairo:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 :root{font-family:Inter,Cairo,system-ui,sans-serif;color:#f8fafc;background:#020617;font-synthesis:none;text-rendering:optimizeLegibility}*{box-sizing:border-box}html,body,#root{margin:0;min-height:100%}body{min-width:320px;background:#020617}button,input,select{font:inherit}button{cursor:pointer}.rtl{font-family:Cairo,Inter,system-ui,sans-serif}.scrollbar-none::-webkit-scrollbar{display:none}.scrollbar-none{scrollbar-width:none}.animate-fade-in{animation:fade-in .25s ease-out}@keyframes fade-in{from{opacity:0}to{opacity:1}}
+header .flex.items-center.gap-3>div:first-child{background:url('/logo-mark.svg') center/cover no-repeat!important;overflow:hidden}header .flex.items-center.gap-3>div:first-child{font-size:0}
